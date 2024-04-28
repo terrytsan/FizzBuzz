@@ -13,6 +13,6 @@ public class FizzBuzzProcessor : IFizzBuzzProcessor
 
 	public string GenerateResult(int number)
 	{
-		throw new NotImplementedException();
+		return number.ToString();
 	}
 }

@@ -11,6 +11,13 @@ public class FizzBuzzGenerator : IFizzBuzzGenerator
 
 	public List<string> GenerateResults(int lowerBound, int upperBound)
 	{
-		throw new NotImplementedException();
+		var results = new List<string>();
+
+		for (var i = lowerBound; i <= upperBound; i++)
+		{
+			results.Add(i.ToString());
+		}
+
+		return results;
 	}
 }
