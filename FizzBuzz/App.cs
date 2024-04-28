@@ -3,10 +3,12 @@
 public class App : IApp
 {
 	private readonly IFizzBuzzGenerator _fizzBuzzGenerator;
+	private readonly IMessageWriter _messageWriter;
 
-	public App(IFizzBuzzGenerator fizzBuzzGenerator)
+	public App(IFizzBuzzGenerator fizzBuzzGenerator, IMessageWriter messageWriter)
 	{
 		_fizzBuzzGenerator = fizzBuzzGenerator;
+		_messageWriter = messageWriter;
 	}
 
 	public void Run(string[] args)
@@ -15,7 +17,7 @@ public class App : IApp
 
 		foreach (var result in results)
 		{
-			Console.WriteLine(result);
+			_messageWriter.WriteMessage(result);
 		}
 	}
 }

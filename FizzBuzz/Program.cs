@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using var host = Host.CreateDefaultBuilder(args).ConfigureServices((_, services) =>
 {
 	services.AddSingleton<IApp, App>();
+	services.AddSingleton<IMessageWriter, MessageWriter>();
 	services.AddSingleton<IFizzBuzzGenerator, FizzBuzzGenerator>();
 	services.AddSingleton<IFizzBuzzProcessor, FizzBuzzProcessor>(_ =>
 	{
