@@ -8,7 +8,7 @@ public class FizzBuzzProcessor : IFizzBuzzProcessor
 
 	public FizzBuzzProcessor(IEnumerable<Rule> rules)
 	{
-		_rules = rules;
+		_rules = rules.OrderByDescending(r => r.Divisor);
 	}
 
 	public string GenerateResult(int number)
