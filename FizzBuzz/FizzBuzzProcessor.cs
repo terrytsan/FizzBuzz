@@ -13,6 +13,20 @@ public class FizzBuzzProcessor : IFizzBuzzProcessor
 
 	public string GenerateResult(int number)
 	{
-		return number.ToString();
+		var rule = GetApplicableRule(number);
+		return rule is null ? number.ToString() : rule.Process(number);
+	}
+
+	private Rule? GetApplicableRule(int number)
+	{
+		foreach (var rule in _rules)
+		{
+			if (rule.IsApplicable(number))
+			{
+				return rule;
+			}
+		}
+
+		return null;
 	}
 }
