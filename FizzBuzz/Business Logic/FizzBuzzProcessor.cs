@@ -1,6 +1,6 @@
 using FizzBuzz.Rules;
 
-namespace FizzBuzz;
+namespace FizzBuzz.Business_Logic;
 
 public class FizzBuzzProcessor : IFizzBuzzProcessor
 {

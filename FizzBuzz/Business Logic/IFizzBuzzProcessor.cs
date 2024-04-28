@@ -1,4 +1,4 @@
-namespace FizzBuzz;
+namespace FizzBuzz.Business_Logic;
 
 public interface IFizzBuzzProcessor
 {

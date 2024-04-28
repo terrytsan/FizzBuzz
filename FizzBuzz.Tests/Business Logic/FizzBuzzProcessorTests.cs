@@ -1,8 +1,9 @@
-﻿using FizzBuzz.Rules;
+﻿using FizzBuzz.Business_Logic;
+using FizzBuzz.Rules;
 using Moq;
 using Xunit;
 
-namespace FizzBuzz.Tests;
+namespace FizzBuzz.Tests.Business_Logic;
 
 public class FizzBuzzProcessorTests
 {

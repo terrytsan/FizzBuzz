@@ -1,4 +1,7 @@
-﻿namespace FizzBuzz;
+﻿using FizzBuzz.Business_Logic;
+using FizzBuzz.Presentation;
+
+namespace FizzBuzz;
 
 public class App : IApp
 {

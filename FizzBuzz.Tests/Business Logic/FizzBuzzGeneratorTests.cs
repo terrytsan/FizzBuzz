@@ -1,7 +1,8 @@
-﻿using Moq;
+﻿using FizzBuzz.Business_Logic;
+using Moq;
 using Xunit;
 
-namespace FizzBuzz.Tests;
+namespace FizzBuzz.Tests.Business_Logic;
 
 public class FizzBuzzGeneratorTests
 {

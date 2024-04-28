@@ -1,4 +1,4 @@
-﻿namespace FizzBuzz;
+﻿namespace FizzBuzz.Presentation;
 
 public interface IMessageWriter
 {
