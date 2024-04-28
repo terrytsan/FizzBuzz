@@ -15,7 +15,7 @@ public class FizzBuzzGenerator : IFizzBuzzGenerator
 
 		for (var i = lowerBound; i <= upperBound; i++)
 		{
-			results.Add(i.ToString());
+			results.Add(_fizzBuzzProcessor.GenerateResult(i));
 		}
 
 		return results;
